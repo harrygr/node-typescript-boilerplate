@@ -7,13 +7,13 @@
     "node": ">= 6.9.0"
   },
   "devDependencies": {
-    "@types/jest": "^22.2.3",
+    "@types/jest": "^23.3.1",
     "@types/node": "^10.2.1",
-    "jest": "^22.4.3",
+    "jest": "^23.5.0",
     "rimraf": "^2.6.2",
-    "ts-jest": "^22.4.4",
+    "ts-jest": "^23.1.4",
     "tsutils": "~2.27.1",
-    "typescript": "^2.8.3"
+    "typescript": "^3.0.1"
   },
   "scripts": {
     "clean": "rimraf coverage build tmp",
@@ -41,7 +41,7 @@
       "js"
     ],
     "transform": {
-      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+      "^.+\\.(ts|tsx)$": "ts-jest"
     },
     "testMatch": [
       "**/*.spec.(ts|tsx|js)"
